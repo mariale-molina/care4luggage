@@ -12,12 +12,13 @@
     .col-xs-12.col-sm-5
       .reviews
         h2.title Reviews
-        - @opinions.each do |opinion|
-          .opinion
-            img src="/img/opinion.png" width= "40px"
-            p style="margin-top:20px"= opinion.description
-            p.right = opinion.name_with_date
-            .divider
+        .opinions
+          - @opinions.each do |opinion|
+            .opinion
+              img src="/img/opinion.png" width= "40px"
+              p style="margin-top:20px"= opinion.description
+              p.right = opinion.name_with_date
+              .divider
 
       = render partial: "opinions/form"
 
