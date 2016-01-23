@@ -1,8 +1,5 @@
 default: &default
   adapter: postgresql
-  host: localhost
-  username: postgres
-  password: 151190
   pool: 5
   timeout: 5000
 
@@ -16,4 +13,7 @@ test: &test
 
 production:
   <<: *default
-  database: care4luggage_produc
+  database: care4luggage_production
+
+cucumber:
+  <<: *test
