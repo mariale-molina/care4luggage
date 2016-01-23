@@ -1,21 +1,26 @@
-.home.col-xs-12
-  .col-xs-12.col-sm-7
-    .what_are_we_doing
-      h2.title WAT DOEN WIJ
-      h1.subtitle PERSOONLIJK AANSPREEKPUNT BIJ ELK TRANSPORT
-      p Wat kunt u van ons verwachten? Care4Luggage onderscheidt zich door maatwerk. Vanaf het vertrek tot aan het moment van aflevering staan uw wensen centraal. Na een uitgebreide inventarisatie over het soort bagage,de afmetingen en andere specificaties wordt het vervoeren van uw bagage tot in detail vastgelegd en ontvangt u een gespecificeerde offerte. U krijgt een unieke inlogcode waarmee u het gehele traject kunt volgen. Elk transport wordt begeleid door een persoonlijk aanspreekpunt, met wie u te allen tijde telefonisch contact kunt houden. Ook werken wij met Track&Trace, zodat wij online traceerbaar zijn gedurende de hele route. Wij streven er naar om binnen Europa uw bagage binnen 48 uur af te leveren op de plaats van bestemming. Als er onderweg om wat voor reden dan ook vertraging ontstaat, houden wij u continu op de hoogte van de omstandigheden, zodat u nooit achteraf onaangenaam wordt verrast. Care4Luggage beschikt over een modern en milieuvriendelijk wagenpark en bezit alle vereiste diploma’s voor het internationaal vervoer van goederen. 
+.home
+  .col-xs-12.section_2
+    .col-xs-12.col-sm-7
+      .what_are_we_doing
+        h2.title WAT DOEN WIJ
+        h1.subtitle PERSOONLIJK AANSPREEKPUNT BIJ ELK TRANSPORT
+        p Wat kunt u van ons verwachten? Care4Luggage onderscheidt zich door maatwerk. Vanaf het vertrek tot aan het moment van aflevering staan uw wensen centraal. Na een uitgebreide inventarisatie over het soort bagage,de afmetingen en andere specificaties wordt het vervoeren van uw bagage tot in detail vastgelegd en ontvangt u een gespecificeerde offerte. U krijgt een unieke inlogcode waarmee u het gehele traject kunt volgen. Elk transport wordt begeleid door een persoonlijk aanspreekpunt, met wie u te allen tijde telefonisch contact kunt houden. Ook werken wij met Track&Trace, zodat wij online traceerbaar zijn gedurende de hele route. Wij streven er naar om binnen Europa uw bagage binnen 48 uur af te leveren op de plaats van bestemming. Als er onderweg om wat voor reden dan ook vertraging ontstaat, houden wij u continu op de hoogte van de omstandigheden, zodat u nooit achteraf onaangenaam wordt verrast. Care4Luggage beschikt over een modern en milieuvriendelijk wagenpark en bezit alle vereiste diploma’s voor het internationaal vervoer van goederen. 
 
-      p Wat vervoeren wij? Onze opdrachten zijn zeer divers: extra koffers, kisten, ski-uitrustingen, golftassen, fietsen, duikuitrusting en muziekinstrumenten. Wij leveren uw zending af in uw hotel, vakantiehuis, sportevenement, festival of bedrijfslocatie. Bij elke order wordt vooraf tot in detail bekeken welke planning het meest optimaal is qua tijd en kosten. Wilt u direct bij aankomst beschikken over uw goederen? Care4Luggage regelt alles tot in de puntjes. 
+        p Wat vervoeren wij? Onze opdrachten zijn zeer divers: extra koffers, kisten, ski-uitrustingen, golftassen, fietsen, duikuitrusting en muziekinstrumenten. Wij leveren uw zending af in uw hotel, vakantiehuis, sportevenement, festival of bedrijfslocatie. Bij elke order wordt vooraf tot in detail bekeken welke planning het meest optimaal is qua tijd en kosten. Wilt u direct bij aankomst beschikken over uw goederen? Care4Luggage regelt alles tot in de puntjes. 
 
-      p Meer weten? Neem dan vrijblijvend contact met ons op.
-  .col-xs-12.col-sm-5
-    .reviews
-      h2.title Reviews
-      - @opinions.each do |opinion|
-        .opinion
-          img src="/img/opinion.png" width= "40px"
-          p style="margin-top:20px"= opinion.description
-          p.right = opinion.name_date
-          .divider
+        p Meer weten? Neem dan vrijblijvend contact met ons op.
+    .col-xs-12.col-sm-5
+      .reviews
+        h2.title Reviews
+        - @opinions.each do |opinion|
+          .opinion
+            img src="/img/opinion.png" width= "40px"
+            p style="margin-top:20px"= opinion.description
+            p.right = opinion.name_date
+            .divider
 
       = render partial: "opinions/form"
+
+  .section-3.col-xs-12
+    = render partial: "information"
+
