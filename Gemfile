@@ -28,6 +28,7 @@ gem 'haml'
 gem 'nested_form'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'rails_12factor', group: :production
+gem 'owlcarousel-rails'
 
 
 gem 'font-awesome-sass'

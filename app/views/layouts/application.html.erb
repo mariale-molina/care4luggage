@@ -10,9 +10,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  <%= render partial: "shared/nav"%>
+  <div class="header col-xs-12">
+    <%= render partial: "shared/nav_lenguages"%>
+    <%= render partial: "shared/nav"%>   
+  </div>
+  <div class="section-1 col-xs-12">
+    <div class="col-xs-12 owl-carousel owl-theme">
+      <div class="item">
+        <img src="/img/b1.jpg"></img>
+      </div>
+      <div class="item">
+        <img src="/img/b2.jpg"></img>
+      </div>
+      <div class="item">
+        <img src="/img/b3.jpg"></img>
+      </div>
+    </div>
+  </div>
+
 <%= yield %>
   <%= render partial: "shared/footer_nav.slim"%>
   <%= render partial: "shared/footer_payment.slim"%>

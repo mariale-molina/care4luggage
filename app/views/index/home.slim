@@ -1,5 +1,5 @@
 .home
-  .col-xs-12.section_2
+  .section-2.col-xs-12
     .col-xs-12.col-sm-7
       .what_are_we_doing
         h2.title WAT DOEN WIJ
@@ -16,7 +16,7 @@
           .opinion
             img src="/img/opinion.png" width= "40px"
             p style="margin-top:20px"= opinion.description
-            p.right = opinion.name_date
+            p.right = opinion.name_with_date
             .divider
 
       = render partial: "opinions/form"
