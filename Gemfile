@@ -25,6 +25,7 @@ gem 'valid_url'
 gem 'money-rails'
 gem 'slim-rails'
 gem 'haml'
+gem 'nested_form'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'rails_12factor', group: :production
 
