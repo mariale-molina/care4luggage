@@ -6,4 +6,9 @@ Rails.application.routes.draw do
 
   resources :opinions, only: [:new, :create]
   devise_for :users
+
+  devise_scope :user do
+    get "/logout" => "devise/sessions#destroy", as: :logout
+  end
+
 end

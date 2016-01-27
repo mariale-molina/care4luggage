@@ -5,9 +5,13 @@
         img src="/img/logo.jpg" width= "300px"
   
   ul.nav.nav-pills.right
-    li.div-nav role="presentation" href= "/home" HOME
-    li.div-nav role="presentation" href="#" BOEKEN
-    li.div-nav role="presentation" href="#" WIE ZIJN WIJ
-    li.div-nav role="presentation" href="#" WAT DOEN WIJ
-    li.div-nav role="presentation" href="#" HOE WERK HET
-    li.div-nav role="presentation" href="#" CONTACT
+    li.div-nav = link_to "HOME", root_path
+    li.div-nav = link_to "BOEKEN", root_path
+    li.div-nav = link_to "WIE ZIJN WIJ", root_path
+    li.div-nav = link_to "WAT DOEN WIJ", root_path
+    li.div-nav = link_to "HOE WERK HET", root_path
+    li.div-nav = link_to "CONTACT", root_path
+    - if user_signed_in?
+      li.div-nav = link_to "LOGOUT", logout_path
+    - else
+      li.div-nav = link_to "LOGIN",  user_session_path
